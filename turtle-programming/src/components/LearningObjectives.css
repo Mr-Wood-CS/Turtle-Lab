@@ -1,0 +1,12 @@
+﻿.learning-objectives { display: grid; grid-template-columns: 1fr 1.3fr; gap: 48px; }
+.learning-objectives h2 { font-size: 14px; font-weight: 650; margin: 0 0 12px; }
+.learning-objectives p, .learning-objectives li { font-size: 15px; line-height: 1.8; color: var(--muted); }
+.learning-objectives p { margin: 0; }
+.learning-objectives ul { margin: 0; padding-left: 19px; }
+.learning-objectives li { padding-left: 3px; margin-bottom: 7px; }
+@media(max-width: 650px) { .learning-objectives { grid-template-columns: 1fr; gap: 24px; } }
+
+.learning-objectives .learning-intention h2,
+.learning-objectives .learning-intention p { color: #a12d2d; }
+.learning-objectives .success-criteria h2,
+.learning-objectives .success-criteria li { color: #25613b; }

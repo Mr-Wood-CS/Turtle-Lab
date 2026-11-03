@@ -1,0 +1,8 @@
+﻿.site-header { border-bottom: 1px solid var(--border); }
+.site-header-inner { max-width: 1000px; margin: auto; padding: 0 32px; min-height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.brand { font-size: 18px; font-weight: 650; text-decoration: none; letter-spacing: -.3px; }
+.site-header nav { display: flex; gap: 28px; align-self: stretch; }
+.site-header nav button { border: 0; border-bottom: 2px solid transparent; background: none; color: var(--muted); padding: 0; font-size: 14px; }
+.site-header nav button.active { border-bottom-color: var(--green); color: var(--ink); }
+.site-header nav button:hover { color: var(--green); }
+@media(max-width: 560px) { .site-header-inner { padding: 20px; align-items: flex-start; flex-direction: column; gap: 18px; } .site-header nav { gap: 24px; } .site-header nav button { padding-bottom: 8px; font-size: 13px; } }

@@ -1,0 +1,10 @@
+.lesson-illustration { margin: 28px 0; border: 1px solid var(--border); border-radius: 4px; padding: 20px; background: #fdfefb; }
+.lesson-illustration svg { display: block; width: 100%; height: auto; }
+.lesson-illustration text { font-family: inherit; font-size: 16px; fill: #2e4334; }
+.lesson-illustration .visual-code { font-family: Consolas, monospace; font-size: 20px; white-space: pre; }
+.lesson-illustration .stored-value, .lesson-illustration .typed-answer { font-size: 36px; }
+.lesson-illustration .visual-note { font-size: 14px; }
+.lesson-illustration figcaption { font-size: 14px; line-height: 1.7; color: var(--muted); margin-top: 8px; }
+@media(max-width: 500px) { .lesson-illustration { padding: 10px; overflow-x: auto; } .lesson-illustration svg { min-width: 470px; } }
+
+.lesson-illustration .movement-code { font-family: Consolas, monospace; font-size: 17px; }

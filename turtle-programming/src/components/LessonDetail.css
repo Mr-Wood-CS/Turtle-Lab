@@ -1,0 +1,41 @@
+﻿.lesson-detail { max-width: 760px; }
+.back-link { border: 0; background: none; color: var(--green); padding: 0; margin-bottom: 32px; font-size: 14px; }
+.lesson-heading { margin-bottom: 30px; }
+.lesson-heading h1 { font-size: 30px; outline: none; }
+.lesson-heading .unit-level { font-size: 14px; margin-bottom: 8px; }
+.lesson-heading .page-position { font-size: 12px; color: var(--muted); margin: 0 0 20px; }
+.lesson-detail h2 { font-size: 17px; font-weight: 600; margin: 24px 0 12px; }
+.lesson-detail .learning-objectives h2 { font-size: 15px; margin-top: 0; }
+.lesson-detail p, .review-criteria li { line-height: 1.85; color: var(--muted); font-size: 16px; }
+.lesson-page { min-height: 240px; }
+.lesson-page > p:first-child { margin-top: 0; }
+.lesson-page .learning-objectives { grid-template-columns: 1fr; gap: 24px; }
+.familiar-example, .word-note { border-left: 2px solid #bccbbf; padding-left: 20px; margin: 28px 0; }
+.word-note h2 { font-size: 15px; }
+.word-note p { font-size: 15px; }
+.code-panel { background: #f7f8f6; border: 1px solid var(--border); border-radius: 3px; overflow: hidden; }
+.code-heading { padding: 12px 18px; display: flex; justify-content: space-between; gap: 12px; border-bottom: 1px solid var(--border); font-size: 12px; color: var(--muted); }
+.code-heading button { background: none; border: 0; color: var(--green); font-size: 12px; }
+.code-panel pre { padding: 18px; margin: 0; font-size: 14px; line-height: 1.9; overflow: auto; }
+.lesson-detail .copy-status { font-size: 12px; }
+.code-reading dl { margin: 0; }
+.code-reading dl > div { padding: 14px 0; border-bottom: 1px solid var(--border); }
+.code-reading dl > div:first-child { padding-top: 0; }
+.code-reading dt { font-size: 14px; overflow-wrap: anywhere; line-height: 1.7; }
+.code-reading dd { margin: 8px 0 0; font-size: 15px; line-height: 1.8; color: var(--muted); }
+.lesson-detail .booklet-note { font-size: 14px; margin-top: 28px; }
+.lesson-detail .main-idea { font-size: 20px; color: var(--ink); }
+.review-criteria ul { padding-left: 20px; }
+.review-criteria li { margin: 8px 0; }
+@media(max-width: 560px) { .lesson-heading h1 { font-size: 26px; } }
+
+.lesson-detail-wide { max-width: none; }
+.example-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 32px; align-items: start; }
+.example-layout h2 { margin-top: 8px; }
+.example-layout .code-panel { position: sticky; top: 20px; }
+.example-layout .code-reading dl > div:first-child { padding-top: 0; }
+.example-result { max-width: 720px; margin-top: 28px; }
+.lesson-detail .review-criteria h2,
+.lesson-detail .review-criteria p,
+.lesson-detail .review-criteria li { color: #25613b; }
+@media(max-width: 700px) { .example-layout { grid-template-columns: 1fr; gap: 20px; } }

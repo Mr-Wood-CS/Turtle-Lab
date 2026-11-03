@@ -1,0 +1,12 @@
+.curriculum { max-width: 760px; }
+.curriculum section { border-top: 1px solid var(--border); padding-top: 28px; margin-top: 36px; }
+.curriculum h2 { font-size: 20px; font-weight: 600; margin: 0 0 22px; }
+.curriculum-outcomes { margin: 0; }
+.curriculum-outcomes > div { margin-bottom: 22px; }
+.curriculum-outcomes dt { font-size: 14px; color: var(--green); font-weight: 600; margin-bottom: 8px; }
+.curriculum-outcomes dd { margin: 0; font-size: 16px; line-height: 1.8; color: var(--muted); }
+.curriculum-benchmarks { padding-left: 20px; margin: 0; }
+.curriculum-benchmarks li { padding-left: 4px; margin: 14px 0; font-size: 16px; line-height: 1.8; color: var(--muted); }
+.curriculum-scope { font-size: 14px; line-height: 1.8; color: var(--muted); margin-top: 24px; }
+.curriculum-source { font-size: 12px; line-height: 1.8; color: var(--muted); margin-top: 28px; }
+.curriculum-source a { text-underline-offset: 3px; }

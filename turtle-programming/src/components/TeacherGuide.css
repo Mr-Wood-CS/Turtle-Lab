@@ -1,0 +1,5 @@
+.teacher-guide{max-width:850px}.teacher-guide h2{font-size:20px;margin:32px 0 18px;font-weight:550}.teacher-guide h3{font-size:15px;font-weight:600}.teacher-callout{padding:24px 28px;background:#f0f3e9;border:1px solid #e3e8db;border-radius:8px;margin:28px 0}.teacher-callout h2{margin-top:0}.teacher-guide p,.teacher-guide blockquote{font-size:13px;line-height:1.9;color:var(--muted)}.outcome-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.outcome-grid article{padding:23px;border:1px solid var(--border);border-radius:8px}.outcome-grid span{font-size:11px;letter-spacing:1px;color:var(--green);font-weight:650}.benchmark{border-bottom:1px solid var(--border);padding:15px 0}.benchmark blockquote{border-left:2px solid #a2b699;margin-left:0;padding-left:16px}.teacher-guide .source-note{font-size:11px}.source-note a{color:var(--green)}@media(max-width:600px){.outcome-grid{grid-template-columns:1fr}}
+
+.teacher-callout { background: transparent; border: 0; border-left: 2px solid #bbc7b9; border-radius: 0; padding: 4px 0 4px 22px; }
+.teacher-guide p, .teacher-guide blockquote { font-size: 15px; }
+.outcome-grid article { border-radius: 3px; }

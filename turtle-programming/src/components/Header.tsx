@@ -1,0 +1,2 @@
+import './Header.css'
+export default function Header({view}:{view:string}){return <header className="topbar"><div>Python Turtle <span>/</span> <strong>{({overview:'Overview',lessons:'Lessons',playground:'Shape explorer',teacher:'Teacher guide'} as Record<string,string>)[view]}</strong></div><div className="topbar-right"><span className="course-pill"><i/> BEGINNER FRIENDLY</span><span className="avatar" aria-label="Student workspace">S</span></div></header>}

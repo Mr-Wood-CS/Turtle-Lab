@@ -1,0 +1,9 @@
+﻿.lesson-pagination { margin-top: 36px; padding-top: 24px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; }
+.page-selector { max-width: 360px; flex: 1; min-width: 0; }
+.page-selector label { display: block; font-size: 13px; color: var(--muted); margin-bottom: 9px; }
+.page-selector select { width: 100%; padding: 10px 30px 10px 10px; background: white; border: 1px solid var(--border); border-radius: 3px; color: var(--ink); font: inherit; font-size: 14px; }
+.page-buttons { display: flex; gap: 12px; }
+.page-buttons .button { gap: 12px; }
+.previous-page { background: white; border-color: var(--border); color: var(--ink); }
+.previous-page:disabled { opacity: .4; }
+@media(max-width: 560px) { .lesson-pagination { flex-direction: column; align-items: stretch; } .page-selector { max-width: none; } .page-buttons { justify-content: space-between; } }

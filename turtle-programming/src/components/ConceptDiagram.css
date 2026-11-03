@@ -1,0 +1,5 @@
+﻿.concept-diagram { margin: 28px 0; }
+.concept-diagram svg { display: block; width: 100%; height: auto; }
+.concept-diagram text { font-family: inherit; font-size: 15px; fill: #293e30; }
+.concept-diagram .diagram-step { font-size: 12px; fill: #5a6b5b; }
+.concept-diagram figcaption { font-size: 13px; line-height: 1.7; color: var(--muted); }

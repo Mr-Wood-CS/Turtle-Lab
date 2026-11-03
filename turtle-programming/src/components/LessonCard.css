@@ -1,0 +1,10 @@
+﻿.lesson-card { display: flex; align-items: center; gap: 22px; width: 100%; padding: 24px 4px; border: 0; border-top: 1px solid var(--border); background: transparent; color: var(--ink); text-align: left; }
+.lesson-card:last-child { border-bottom: 1px solid var(--border); }
+.lesson-card:hover { background: #f8f9f7; }
+.lesson-number { width: 20px; flex-shrink: 0; font-size: 14px; color: var(--muted); }
+.lesson-title { font-size: 18px; font-weight: 500; }
+.lesson-status { margin-left: auto; color: var(--green); font-size: 12px; }
+.lesson-arrow { margin-left: auto; color: var(--muted); }
+.lesson-status + .lesson-arrow { margin-left: 8px; }
+@media(max-width: 500px) { .lesson-card { gap: 14px; } .lesson-title { font-size: 16px; } .lesson-status { font-size: 11px; } }
+.lesson-title small { display: block; font-size: 13px; font-weight: 400; color: var(--muted); margin-top: 6px; }
