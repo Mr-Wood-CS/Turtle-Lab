@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Sidebar from './components/Sidebar'
 import LessonCard from './components/LessonCard'
 import LessonDetail from './components/LessonDetail'
@@ -7,25 +7,43 @@ import LandingPage from './components/LandingPage'
 import { lessons } from './data/lessons'
 import './App.css'
 
+type Route = { view: string; selected: number | null }
+
+function readRoute(hash: string): Route {
+  const lessonMatch = /^#\/lesson\/([1-9]\d*)\/?$/.exec(hash)
+  if (lessonMatch) {
+    const index = Number(lessonMatch[1]) - 1
+    if (index >= 0 && index < lessons.length) return { view: 'lessons', selected: index }
+    return { view: 'lessons', selected: null }
+  }
+  if (hash === '#/lessons') return { view: 'lessons', selected: null }
+  if (hash === '#/playground') return { view: 'playground', selected: null }
+  return { view: 'overview', selected: null }
+}
 export default function App() {
-  const [view, setView] = useState('overview')
-  const [selected, setSelected] = useState<number | null>(null)
+  const [route, setRoute] = useState(() => readRoute(window.location.hash))
+  const { view, selected } = route
+
+  useEffect(() => {
+    function syncRoute() {
+      setRoute(readRoute(window.location.hash))
+      window.scrollTo({ top: 0 })
+    }
+    window.addEventListener('hashchange', syncRoute)
+    return () => window.removeEventListener('hashchange', syncRoute)
+  }, [])
+
   function navigate(nextView: string) {
-    setView(nextView)
-    setSelected(null)
-    window.scrollTo({ top: 0 })
+    window.location.hash = nextView === 'overview' ? '/' : `/${nextView}`
   }
 
   function openLesson(index: number) {
-    setView('lessons')
-    setSelected(index)
-    window.scrollTo({ top: 0 })
+    window.location.hash = `/lesson/${index + 1}`
   }
-
   return <>
-    <a className="skip-link" href="#main-content">Skip to content</a>
+    <a className="skip-link" href="#main-content" onClick={event => { event.preventDefault(); document.getElementById('main-content')?.focus() }}>Skip to content</a>
     <Sidebar view={view} onNavigate={navigate} />
-    <main id="main-content" className="page-content">
+    <main id="main-content" className="page-content" tabIndex={-1}>
       {view === 'overview' && <LandingPage onLessons={() => navigate('lessons')} />}
       {view === 'lessons' && selected === null && <>
         <header className="unit-heading">

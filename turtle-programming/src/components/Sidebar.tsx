@@ -3,7 +3,7 @@ import './Sidebar.css'
 export default function Sidebar({ view, onNavigate }: { view: string; onNavigate: (view: string) => void }) {
   return <header className="site-header">
     <div className="site-header-inner">
-      <a className="brand" href="#main-content" onClick={() => onNavigate('overview')}>Turtle Lab</a>
+      <a className="brand" href="#/" onClick={event => { event.preventDefault(); onNavigate('overview') }}>Turtle Lab</a>
       <nav aria-label="Main navigation">
         {[
           ['overview', 'Home'],
